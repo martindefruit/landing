@@ -1,8 +1,13 @@
 <template>
-  <div class="container p-0">
+  <div class="p-0">
     <div>
-      <Navbar />
-      <Header />
+      <div class="container p-0">
+        <Navbar />
+        <Header />
+      </div>
+      <div id="jobs" class="container-fluid p-0">
+        <Banner />
+      </div>
     </div>
   </div>
 </template>
@@ -12,9 +17,9 @@ export default {};
 </script>
 
 <style>
-.title {
+h1, h2, h3, h4 {
   font-family:
-    'Quicksand',
+    'Assistant',
     'Source Sans Pro',
     -apple-system,
     BlinkMacSystemFont,
@@ -23,11 +28,16 @@ export default {};
     'Helvetica Neue',
     Arial,
     sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+    color: #000a3e;
+}
+
+p, a, li {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #323f85;
+}
+
+h4 {
+  opacity: .7;
 }
 
 .subtitle {
@@ -42,3 +52,9 @@ export default {};
   padding-top: 15px;
 }
 </style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@800&family=Roboto+Condensed&display=swap');
+</style>
+CSS rules to specify families
+
+font-family: 'Assistant', sans-serif;
